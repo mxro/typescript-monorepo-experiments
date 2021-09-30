@@ -1,10 +1,18 @@
 {
   "name": "cli-app",
   "packageManager": "yarn@3.0.2",
-  "references": {
-    "path": "../consts"
-  },
   "dependencies": {
-    "consts": "workspace:packages/consts"
-  }
+    "@yarnpkg/esbuild-plugin-pnp": "^2.0.0-rc.1",
+    "consts": "0.1.0",
+    "esbuild": "^0.13.3"
+  },
+  "scripts": {
+    "cli": "yarn node dist/src/run.js",
+    "build": "esbuild dist/src/run.js --bundle --platform=node --outfile=dist/main.js"
+  },
+  "references": [
+    {
+      "path": "../consts"
+    }
+  ]
 }

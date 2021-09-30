@@ -1,6 +1,8 @@
 {
  "compilerOptions": {
     "composite": true,
-    "rootDir": "./"
+    "noEmit": false, /* referenced projects may not disabled emit */
+    "rootDir": "./",
+    "isolatedModules": true,
  }
 }
