@@ -1,8 +1,16 @@
 {
-    "exclude": [
-      "packages/**/tests/**",
-      "packages/**/dist/**"
-    ],
+  "exclude": [
+    "packages/**/tests/**",
+    "packages/**/dist/**"
+  ],
+  "references": [
+    {
+      "path": "./packages/consts",
+    },
+    {
+      "path": "./packages/cli-app",
+    }
+  ],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 

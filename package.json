@@ -6,7 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "tsref": "workspaces-to-typescript-project-references"
+    "tsref": "workspaces-to-typescript-project-references",
+    "tsc": "tsc"
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.6.2",
