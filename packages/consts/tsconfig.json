@@ -1,8 +1,10 @@
 {
   "extends": "./../../tsconfig.base.module.json",
   "references": [],
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*"
+  ],
   "compilerOptions": {
-     "outDir": "./dist", 
+    "outDir": "./dist"
   }
 }
