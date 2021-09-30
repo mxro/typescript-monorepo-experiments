@@ -1,0 +1,7 @@
+{
+  "name": "cli-app",
+  "packageManager": "yarn@3.0.2",
+  "references": {
+    "consts": "workspace:packages/consts"
+  }
+}
