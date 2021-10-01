@@ -8,7 +8,7 @@
   "scripts": {
     "tsref": "workspaces-to-typescript-project-references",
     "tsc": "tsc",
-    "compile": "yarn tsref && tsc --build"
+    "compile": "yarn node scripts/updateReferences.js && tsc --build"
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.6.2",

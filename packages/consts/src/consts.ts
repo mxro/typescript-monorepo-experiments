@@ -1,3 +1,3 @@
 const hi='Hello';
 
-export {hi};
+export { hi };
