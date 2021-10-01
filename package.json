@@ -6,8 +6,8 @@
     "packages/*"
   ],
   "scripts": {
-    "tsc": "tsc",
-    "compile": "yarn node scripts/updateReferences.js && tsc --build"
+    "tsc": "tsc --extendedDiagnostics",
+    "compile": "yarn node scripts/updateReferences.js && tsc --build --extendedDiagnostics"
   },
   "devDependencies": {
     "@monorepo-utils/workspaces-to-typescript-project-references": "^2.6.2",

@@ -2,8 +2,10 @@
   "name": "cli-app",
   "packageManager": "yarn@3.0.2",
   "dependencies": {
+    "consts": "0.1.0"
+  },
+  "devDependencies": {
     "@yarnpkg/esbuild-plugin-pnp": "^2.0.0-rc.1",
-    "consts": "0.1.0",
     "esbuild": "^0.13.3"
   },
   "scripts": {
