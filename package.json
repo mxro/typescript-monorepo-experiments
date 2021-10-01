@@ -6,7 +6,6 @@
     "packages/*"
   ],
   "scripts": {
-    "tsref": "workspaces-to-typescript-project-references",
     "tsc": "tsc",
     "compile": "yarn node scripts/updateReferences.js && tsc --build"
   },
