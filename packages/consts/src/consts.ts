@@ -1,3 +1,5 @@
 const hi='Hello';
 
-export { hi };
+const anotherMessage = 'Just sayin';
+
+export { hi, anotherMessage };

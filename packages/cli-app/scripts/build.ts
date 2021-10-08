@@ -1,10 +1,10 @@
-const {pnpPlugin} = require('@yarnpkg/esbuild-plugin-pnp');
-const esbuild = require('esbuild');
+import { build } from 'esbuild';
+import { pnpPlugin } from '@yarnpkg/esbuild-plugin-pnp';
 
-esbuild.build({
+build({
   plugins: [pnpPlugin()],
   bundle: true,
-  entryPoints: ['dist/src/run.js'],
+  entryPoints: ['src/run.ts'],
   outfile: 'dist/cli.js',
 }).catch((e) => {
   console.log('Build not successful', e.message);

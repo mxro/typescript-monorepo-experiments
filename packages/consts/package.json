@@ -2,8 +2,12 @@
   "name": "consts",
   "version": "0.1.0",
   "main": "src/consts.ts",
+  "module": "dist/src/const.js",
+  "sideEffects": false,
   "packageManager": "yarn@3.0.2",
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "publishConfig": {
     "main": "dist/src/consts.js",
     "types": "dist/src/consts.d.ts"

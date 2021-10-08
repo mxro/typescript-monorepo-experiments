@@ -1,16 +1,20 @@
 {
   "name": "cli-app",
   "packageManager": "yarn@3.0.2",
+  "sideEffects": false,
   "dependencies": {
     "consts": "0.1.0"
   },
   "devDependencies": {
+    "@types/node": "^16.10.3",
     "@yarnpkg/esbuild-plugin-pnp": "^2.0.0-rc.1",
-    "esbuild": "^0.13.3"
+    "esbuild": "^0.13.3",
+    "typescript": "^4.4.3"
   },
   "scripts": {
     "cli": "yarn node dist/cli.js",
-    "build": "yarn node scripts/build.js"
+    "compile": "tsc --build",
+    "build": "yarn node dist/scripts/build.js"
   },
   "references": [
     {

@@ -3,6 +3,8 @@
     "packages/**/tests/**",
     "packages/**/dist/**"
   ],
+  "include": [],
+  "extends": "./tsconfig.base.module.json",
   "references": [
     {
       "path": "packages/cli-app"
@@ -12,15 +14,9 @@
     }
   ],
   "compilerOptions": {
-    "incremental": true,
-    "target": "es5",
-    "module": "commonjs",
     "outDir": "./dist",
     "noEmit": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "strict": true
   }
 }

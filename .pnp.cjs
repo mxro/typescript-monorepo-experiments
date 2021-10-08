@@ -148,6 +148,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["@types/node", [
+        ["npm:16.10.3", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.10.3-ae1d2f8739-3fd429bce8.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.10.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["@types/normalize-package-data", [
         ["npm:2.4.1", {
           "packageLocation": "./.yarn/cache/@types-normalize-package-data-npm-2.4.1-c31c56ae6a-e87bccbf11.zip/node_modules/@types/normalize-package-data/",
@@ -256,9 +265,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/cli-app/",
           "packageDependencies": [
             ["cli-app", "workspace:packages/cli-app"],
+            ["@types/node", "npm:16.10.3"],
             ["@yarnpkg/esbuild-plugin-pnp", "virtual:fc55b794551da66e9c1fa66db639a3c7d09908966e0ebc0ce1c9d06ea07855d47a3f1c8036fd21ec1789e1c0ef80d0999fba07091913e2b5d47e415f5148ed4d#npm:2.0.0-rc.1"],
             ["consts", "workspace:packages/consts"],
-            ["esbuild", "npm:0.13.3"]
+            ["esbuild", "npm:0.13.3"],
+            ["typescript", "patch:typescript@npm%3A4.4.3#~builtin<compat/typescript>::version=4.4.3&hash=32657b"]
           ],
           "linkType": "SOFT",
         }]
